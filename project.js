@@ -90,7 +90,8 @@ function gameEngine() {
 }
 
 // Main Logic starts here
-
+moveSound.play();
+moveSound.loop = true;
 window.requestAnimationFrame(main);
 window.addEventListener('keydown', e => {
     inputDir = { x: 0, y: 1 }; // start the game
